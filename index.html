@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <link rel="stylesheet" href="css/less.css"> 
+    <script>
+		var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+		//devicePixelRatio设备的像素比；
+		  
+		document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+		var html=document.getElementsByTagName('html')[0];
+		var pageWidth=html.getBoundingClientRect().width;
+		html.style.fontSize=pageWidth/10+"px"; 
+	</script>
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/less.css"> 
+</head>
+<body>
+    <header >
+            <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="imgs/ljc1.png"></div>
+                        <div class="swiper-slide"><img src="imgs/ljc2.png"></div>
+                        <div class="swiper-slide"><img src="imgs/ljc4.png"></div>                 
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <script src="dist/js/swiper.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    pagination: {
+                    el: '.swiper-pagination',
+                    },
+                });
+            </script>
+        <!-- <script>
+            var oHeader=document.getElementById('header')
+            var oImg=oHeader.getElementsByTagName('img')
+            var index=0
+            
+            function get(){
+                index++
+               if(index==oImg.length){
+                   index=0
+               }
+               for(var i=0;i<oImg.length;i++){
+                   oImg[i].style.opacity=0;
+               }
+               oImg[index].style.opacity=1;
+            }
+            setInterval(get,2000)
+        </script> -->
+        <div>
+           <form action="">
+               <select name="" id="">
+                    <option value="volvo">课程</option>
+                    <option value="saab">语文</option>
+                    <option value="opel">数学</option>
+                    <option value="audi">英语</option>
+               </select>
+               
+           </form> 
+           <span>|</span>
+           <div><img src="imgs/ljc3.png">请输入关键词</div>
+        </div>
+    </header>
+    <section>
+      <div>
+            <img src="imgs/ljc5.png">          
+            <p>定制教育</p>
+      </div>
+      <div>
+            <img src="imgs/ljc6.png">          
+            <p>签约机构</p>
+      </div>
+      <div>
+            <img src="imgs/ljc7.png">          
+            <p>名师推荐</p>
+      </div>
+      <div>
+            <img src="imgs/ljc8.png">          
+            <p>全部课程</p>
+      </div>
+    </section>
+    <aside>       
+        <div>
+            <span>文化才华</span>
+            <img src="imgs/ljc9.png">
+        </div>
+    </aside>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc10.png"></div>
+        <div class="right">
+            <b>金宝贝早教中心</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc11.png"></div>
+        <div class="right">
+            <b>长颈鹿美女昆山院校</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+            <div class="left"><img src="imgs/ljc12.png"></div>
+            <div class="right">
+            <b>精锐教育</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <aside>       
+        <div>
+            <span>早教益智</span>
+            <img src="imgs/ljc9.png">
+        </div>
+    </aside>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc13.png"></div>
+        <div class="right">
+            <b>金宝贝早教中心</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc14.png"></div>
+        <div class="right">
+            <b>长颈鹿美女昆山院校</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+            <div class="left"><img src="imgs/ljc12.png"></div>
+            <div class="right">
+            <b>精锐教育</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <aside>       
+        <div>
+            <span>外语留学</span>
+            <img src="imgs/ljc9.png">
+        </div>
+    </aside>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc15.png"></div>
+        <div class="right">
+            <b>金宝贝早教中心</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+        <div class="left"><img src="imgs/ljc16.png"></div>
+        <div class="right">
+            <b>长颈鹿美女昆山院校</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <div class="banner">
+            <div class="left"><img src="imgs/ljc17.png"></div>
+            <div class="right">
+            <b>精锐教育</b>
+            <span>三星级</span>
+            <div>
+                <div>好评率：100%</div>
+                <div>评分：5.0</div>
+            </div>
+            <div>
+                <div>人气：834</div>
+                <div>信用：3</div>
+            </div>            
+        </div>
+    </div>
+    <footer>
+        <div>
+            <img src="imgs/ljc18.png" >
+            <p>主页</p>
+        </div>
+        <div>
+            <img src="imgs/ljc19.png" >
+            <p>分类</p>
+        </div>
+        <div>
+            <img src="imgs/ljc20.png" >
+            <p>分布</p>
+        </div>
+        <div>
+            <img src="imgs/ljc21.png" >
+            <p>我的</p>
+        </div>
+    </footer>
+</body>
+</html>
